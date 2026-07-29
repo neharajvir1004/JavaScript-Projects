@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change BG Color</title>
+</head>
+<body id="bdy" 
+
+style=" 
+display: flex; 
+flex-direction: column; 
+justify-content: center; 
+align-items: center; 
+height: 85vh">
+    
+    <H1> Theme Toggle Project </H1>
+    <p>JavaScript DOM Dynamic Styling </p>
+    <button id = "btn"   onclick="clrChange">Change Theme</button>
+
+
+    <script>
+
+        const body = document.getElementById('bdy');
+        const btn = document.getElementById('btn');
+
+
+        function clrChange(){
+                body.style.backgroundColor="Black";
+                body.style.color="White";
+                body.style.alignItems="center";
+        }
+
+        btn.addEventListener('click',clrChange)
+
+    </script>
+</body>
+</html>
